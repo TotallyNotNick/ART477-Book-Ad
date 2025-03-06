@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Gotham;
+    src: url("Book Covers/Fonts/Gotham-Bold.otf");
+  }
+
+html {
+    background-color: #B2BEB5;
+}
+
+.book-container {
+    background-color: blue;
+    height: 600px;
+    width: 393px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.book-cover {
+    margin: auto;
+}
+
+/* Cover Elements */
+.footer {
+    position: absolute;
+    top: 450px;
+    background-color: black;
+    height: 150px;
+    width: 393px;
+    z-index: -1;
+}
+
+.red-top {
+    position: absolute;
+    top: 0px;
+    background-color: #D62630;
+    height: 450px;
+    width: 393px;
+    z-index: -1;
+}
+
+.title-book {
+    position: absolute;
+    top: 0px;
+}
+
+.book {
+    position: absolute;
+    top: 0px;
+}
+
+@keyframes matches {
+    0% {left: 100px; top: 50px;}
+    100% {left: 0px; top: 0px;}
+}
+.matches {
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    animation: matches;
+    animation-duration: 5s;
+}
+
+.flames {
+    position: absolute;
+    top: 97px;
+    left: 52px;
+    filter: blur(1px);
+    opacity: 0;
+}
+.flames:hover {
+    position: absolute;
+    top: 97px;
+    left: 52px;
+    filter: blur(1px);
+    opacity: 1;
+}
+
+@keyframes title {
+    0% {text-shadow: 0px 0px black;}
+    100% {text-shadow: 4px 4px black;}
+}
+.title-text {
+    font-family: "League Gothic", serif;
+    font-size: 92px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 96;
+    position: absolute;
+    top: 196px;
+    left: 49px;
+    color: #EFEDDE;
+    animation: title;
+    animation-duration: 3s;
+    text-shadow: 4px 4px black;
+}
+
+.sub-text {
+    font-family: "League Gothic", serif;
+    font-size: 80px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 96;
+    position: absolute;
+    top: 330px;
+    left: 160px;
+    color: #D62630;
+}
+
+.sub-img {
+    position: absolute;
+    top: 0px;
+}
+
+.author-text {
+    font-family: "Gotham", serif;
+    font-size: 26px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 96;
+    position: absolute;
+    top: 515px;
+    left: 35px;
+    color: #D62630;
+    letter-spacing: 10px;
+}
+
+.edition-text {
+    font-family: "League Gothic", serif;
+    font-size: 25px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    letter-spacing: 6px;
+    position: absolute;
+    top: 196px;
+    left: 49px;
+    color: #EFEDDE;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+}
