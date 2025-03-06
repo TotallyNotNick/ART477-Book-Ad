@@ -81,6 +81,25 @@ html {
     0% {text-shadow: 0px 0px black;}
     100% {text-shadow: 4px 4px black;}
 }
+
+.title-shadow {
+    z-index: -1;
+    font-family: "League Gothic", serif;
+    font-size: 92px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 96;
+    position: absolute;
+    top: 196px;
+    left: 49px;
+    color: black;
+    animation: title;
+    animation-duration: 3s;
+    text-shadow: 4px 4px black;
+}
+
 .title-text {
     font-family: "League Gothic", serif;
     font-size: 92px;
@@ -93,10 +112,24 @@ html {
     top: 196px;
     left: 49px;
     color: #EFEDDE;
-    animation: title;
-    animation-duration: 3s;
-    text-shadow: 4px 4px black;
 }
+
+.title-text:hover {
+    background-image: url("https://dl.dropbox.com/s/r2s8s2r17wi0xm6/flame.png?dl=0");
+    background-position: 0 -1000px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fire 4s linear infinite;
+}
+
+@keyframes fire {
+    0% {
+      background-position: 0% -50%;
+    }
+    100% {
+      background-position: 0% -25%;
+    }
+  }
 
 .sub-text {
     font-family: "League Gothic", serif;
