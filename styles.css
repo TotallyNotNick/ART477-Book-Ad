@@ -8,7 +8,6 @@ html {
 }
 
 .book-container {
-    background-color: blue;
     height: 600px;
     width: 393px;
     position: absolute;
@@ -114,6 +113,12 @@ html {
     color: #EFEDDE;
 }
 
+.book-container:hover .red-top {
+    background-image: url("https://dl.dropbox.com/s/r2s8s2r17wi0xm6/flame.png?dl=0");
+    background-position: -1000px -1000px;
+
+    animation: fire 4s linear infinite;
+}
 .title-text:hover {
     background-image: url("https://dl.dropbox.com/s/r2s8s2r17wi0xm6/flame.png?dl=0");
     background-position: 0 -1000px;
@@ -124,10 +129,10 @@ html {
 
 @keyframes fire {
     0% {
-      background-position: 0% -50%;
+      background-position: 0% 50%;
     }
     100% {
-      background-position: 0% -25%;
+      background-position: 0% 75%;
     }
   }
 
